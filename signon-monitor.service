@@ -1,0 +1,19 @@
+[Unit]
+Description=Sign-On Monitor Bot
+After=network.target
+
+[Service]
+Type=simple
+User=aimbots
+WorkingDirectory=/home/aimbots/bots/signon-monitor
+ExecStart=/usr/bin/python3 /home/aimbots/bots/signon-monitor/signon_monitor.py
+Restart=always
+RestartSec=5
+SyslogIdentifier=signon-monitor
+
+# Optional: set environment for logging
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
