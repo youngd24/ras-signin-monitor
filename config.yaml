@@ -1,9 +1,7 @@
-
 # Retro AIM Server configuration
 api:
   # The base URL of the Retro AIM Server management API
   base_url: "http://localhost:8080"
-  
 
 # Monitoring configuration
 monitoring:
@@ -11,14 +9,23 @@ monitoring:
   poll_interval_seconds: 10
   # When the app first starts, it uses the first fetch of screennames as a baseline
   baseline_on_startup: true
-  
 
 # Message configuration
 message:
   # The screen name of the user sending the message
   sender: "Gibbons, Peter (pgibbons)"
+  
+  # List of users to ignore (won't send messages to these users)
+  ignored_users:
+    - "Milton"
+    - "TestBot"
+    - "AdminUser"
+  
+  # Cooldown period in minutes before messaging the same user again
+  cooldown_minutes: 10
+  
   # The message to send to new users
-  text: | 
+  text: |
     Man, I've been waiting a while for someone to finally sign on here. I'm a former
     employee of INITECH, left at the time of the fire to take a boring construction
     job, got the heck out of there. Anyways, before I left we did some, well, not so
