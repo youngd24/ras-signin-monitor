@@ -1,0 +1,33 @@
+
+# Retro AIM Server configuration
+api:
+  # The base URL of the Retro AIM Server management API
+  base_url: "http://localhost:8080"
+  
+
+# Monitoring configuration
+monitoring:
+  # The interval in seconds to poll the /session endpoint
+  poll_interval_seconds: 10
+  # When the app first starts, it uses the first fetch of screennames as a baseline
+  baseline_on_startup: true
+  
+
+# Message configuration
+message:
+  # The screen name of the user sending the message
+  sender: "Gibbons, Peter (pgibbons)"
+  # The message to send to new users
+  text: | 
+    Man, I've been waiting a while for someone to finally sign on here. I'm a former
+    employee of INITECH, left at the time of the fire to take a boring construction
+    job, got the heck out of there. Anyways, before I left we did some, well, not so
+    nice things that I need someone to take care of for me. There's an account in
+    the INITECH internal banking system with something like $300,000 in it, it's
+    yours if you can erase all track of what we did to get it there. Don't worry,
+    it's not stealing, it's just all the dropped off, rounded up pennies we collected
+    using a virus. There's an old email sent to me that Michael left sitting around,
+    it has what you need to find the account in it, make sure you clean up afterwards
+    or you get caught. It's on a file server, used to be named NWS001, the special
+    projects share we set up is called "Special_Projects" and is under my home directory
+    on it. Thanks and good luck. Peter Gibbons.
