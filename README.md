@@ -1,5 +1,7 @@
 # Sign-On Monitor Script
 
+This is a clone of the code from here: https://github.com/jgknight/ras-scripts/tree/main/signon_monitor, all source credit goes to them, I just copied and hacked it.
+
 This script monitors a Retro AIM Server instance for new user sign-ons and sends them a configurable welcome message via the management API.
 
 It detects new users by watching for screen names that appear for the first time or who have re-signed on.
